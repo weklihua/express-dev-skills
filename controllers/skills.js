@@ -26,10 +26,10 @@ function newSkill(req, res) {
 
 function create(req, res) {
     Skill.create(req.body)
-    res.redirect('/skills')
+    res.redirect('/')
 }
 
 function deleteSkill(req, res) {
     Skill.deleteOne(req.params.id)
-    res.redirect('/skills')
+    res.redirect('/')
 }
